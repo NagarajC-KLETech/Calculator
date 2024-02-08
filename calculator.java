@@ -49,6 +49,27 @@ class Calculator{
         return(operand_1 / operand_2);
     }
 
+    /**
+     * The function "square" takes a float number as input and returns the square of that number.
+     * 
+     * @param operand_1 A float value that represents the operand to be squared.
+     * @return the square of the operand_1.
+     */
+    float square(float operand_1){
+        return(operand_1 * operand_1);
+    }
+
+    /**
+     * The function "cube" takes a float number as input and returns the cube of that number.
+     * 
+     * @param operand_1 A float value representing the operand that will be cubed.
+     * @return The cube of the operand_1 value.
+     */
+    float cube(float operand_1){
+        return(operand_1 * operand_1 * operand_1);
+    }
+
+
     public static void main(String[] args){
         float operand_1 = 10;
         float operand_2 = 5;
@@ -60,7 +81,11 @@ class Calculator{
         float mul_result = calc.multiplication(operand_1, operand_2);
         System.out.println("Result of Multiplication is: " + mul_result);
         float div_result = calc.division(operand_1, operand_2);
-        System.out.println("Result of Division is: " + div_result);        
+        System.out.println("Result of Division is: " + div_result);
+        float sqr_result = calc.square(operand_1);
+        System.out.println("Result of Square is: " + sqr_result);
+        float cube_result = calc.cube(operand_1);
+        System.out.println("Result of Cube is: " + cube_result);        
     }
 
 }
